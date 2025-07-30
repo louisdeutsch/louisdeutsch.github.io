@@ -1,0 +1,11 @@
+title: Louis Deutsch's Blog
+description: stats and mathy things
+author: Louis Deutsch
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+
