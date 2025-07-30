@@ -9,7 +9,7 @@ first post.
 
 MathJax test: $y = mx + b$ and 
 $$
-\bar X_n \xrigtharrow{d} \mathcal N(\mu, \sigma^2)
+\bar X_n \xrightarrow{d} \mathcal N(\mu, \sigma^2)
 $$
 
 
