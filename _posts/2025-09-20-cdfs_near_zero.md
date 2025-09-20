@@ -22,7 +22,7 @@ I'll give the context for this at the end, but for now I'll just consider it on 
 
 Despite this, it turns out that it's pretty easy to find examples of functions that satisfy $(1)$ yet the conjecture is false for them. $x^n$ doesn't work because its slope near $0$ approaches $0$ (the derivative is $nx^{n-1} \to 0$). What if our convex function had a derivative of at least $1$ near zero? 
 
-One example: $h(x) = e^x-1$. This satisfies $(1)$: $h(0) = 0$, $h'(x) = e^x > 0$, and $h^{\prime\prime}(x) = e^x > 0$ also. It is a standard mathematical fact that $e^x - 1 > x$ for all $x$, which precisely refutes the conjecture.
+One example: $h(x) = e^x-1$. This satisfies $(1)$: $h(0) = 0$, $h'(x) = e^x > 0$, and $h^{\prime\prime}(x) = e^x > 0$ also, so $(1)$ is satisfied. We also have $h'(x) > 1$ near zero, so the slope of the function is greater than $1$ no matter how close to zero we get. It is a standard mathematical fact that $e^x - 1 > x$ for all $x$, so this refutes the conjecture.
 
 $h$ is not unique, and we can produce many more such functions in the following way. Note that $x = \int_0^x 1 \,\text dt$, and so the slope is $1$ by the fundamental theorem of calculus (a rather convoluted way to arrive at that fact). To get a function with a faster slope near $0$, we just need to integrate something that's bigger than $1$ near zero, as if $f > g$ on $(0,\e)$ then $\int_0^\e f > \int_0^\e g$ (this is the monotonicity of integration).
 
