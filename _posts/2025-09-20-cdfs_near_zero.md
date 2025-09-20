@@ -11,9 +11,11 @@ Question: if we have a function that is $0$ at $0$, and increases from there whi
 ![Can a function that curls up like this, and goes through the origin, always be above the line y=x near zero?](/assets/posts/2025-09-20/problem-statement.png)
 
 Here's a more precise version of that question. Consider a function $F : [0,\infty) \to [0,\infty)$ with the following conditions:
+
 $$
 F(0) = 0; \quad \exists \e > 0 : \forall x \in (0,\e) \;F'(x) > 0 \text{ and } F''(x) > 0 \tag{1}.
 $$
+
 Must we have $F(x) < x$ for $0  <x < \e$? 
 
 I'll give the context for this at the end, but for now I'll just consider it on its own. The first function I thought to check it this conjecture with is the trusty convex polynomial $x^n$ for $n$ big. The conjecture happens to be true for such functions. $x^n$ can't somehow curl up fast enough to be above $1$ for small inputs.
@@ -27,9 +29,11 @@ $h$ is not unique, and we can produce many more such functions in the following 
 Well, one such function is the constant $2$. Does that work? $F(x) = \int_0^x 2 \,\text dt = 2x$ satisfies $(1)$ if we relax to accept $F''(x) = 0$. This gives us the rather-expected result that the line $y = 2x$ is always above the line $y = x$. So that's nearly an example, but it'd be nice to get some with positive curvature.
 
 Let $f$ be the integrand, so $F(x) = \int_0^x f(t)\,\text dt$. We could try a function like $f(x) = ax^p + 1$ for $a,p>0$. Then $f > 1$ near zero, and $F(x) = \frac{a}{p+1}x^{p+1} + x > x$ near zero, with polynomial growth away from the line $y=x$. So that works. We can get even faster growth by adding up more polynomials, and in the limit we can arrive at $f(x) = \sum_{n=0}^\infty \frac{x^n}{n!} = e^x$. $f(x) > 1$ for all $x > 0$, so 
+
 $$
 \int_0^x f(t)\,\text dt = e^x - 1 > \int_0^x 1 \,\text dt = x.
 $$
+
 This gives us a proof of the earlier fact that $e^x - 1 > x$ for $x > 0$! I haven't seen this particular proof before, hence my surprise.
 
 
