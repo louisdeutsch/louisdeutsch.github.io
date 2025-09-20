@@ -16,7 +16,7 @@ $$
 F(0) = 0; \quad \exists \e > 0 : \forall x \in (0,\e) \;F'(x) > 0 \text{ and } F^{\prime\prime}(x) > 0 \tag{1}.
 $$
 
-\textbf{Conjecture}: must we have $F(x) < x$ for $0  <x < \e$? 
+__Conjecture__: must we have $F(x) < x$ for $0  <x < \e$? 
 
 I'll give the context for this at the end, but for now I'll just consider it on its own. The first function I used to check this conjecture is the trusty convex polynomial $x^n$ for $n$ big. The conjecture happens to be true for such functions. $x^n$ can't somehow curl up fast enough to be above $1$ for small inputs.
 
