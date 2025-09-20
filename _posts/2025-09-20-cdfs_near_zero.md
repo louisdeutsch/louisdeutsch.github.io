@@ -16,15 +16,15 @@ $$
 F(0) = 0; \quad \exists \e > 0 : \forall x \in (0,\e) \;F'(x) > 0 \text{ and } F^{\prime\prime}(x) > 0 \tag{1}.
 $$
 
-__Conjecture__: must we have $F(x) < x$ for $0  <x < \e$? 
+__Conjecture__: if $F$ satisfies $(1)$, must we have $F(x) < x$ for $x$ in some neighborhood of zero? 
 
 I'll give the context for this at the end, but for now I'll just consider it on its own. The first function I used to check this conjecture is the trusty convex polynomial $x^n$ for $n$ big. The conjecture happens to be true for such functions. $x^n$ can't somehow curl up fast enough to be above $x$ for small inputs.
 
 Despite this, it turns out that it's pretty easy to find examples of functions that satisfy $(1)$ yet the conjecture is false for them. $x^n$ doesn't work because its slope near $0$ approaches $0$ (the derivative is $nx^{n-1} \to 0$). What if our convex function had a derivative of at least $1$ near zero? 
 
-One example: $h(x) = e^x-1$. This satisfies $(1)$: $h(0) = 0$, $h'(x) = e^x > 0$, and $h^{\prime\prime}(x) = e^x > 0$. We also have $h'(x) > 1$ near zero, so the slope of the function is greater than $1$ no matter how close to zero we get. It is a standard mathematical fact that $e^x - 1 > x$ for all $x$, so this refutes the conjecture.
+One example: $H(x) = e^x-1$. This satisfies $(1)$: $H(0) = 0$, $H'(x) = e^x > 0$, and $H^{\prime\prime}(x) = e^x > 0$. We also have $H'(x) > 1$ near zero, so the slope of the function is greater than $1$ no matter how close to zero we get. It is a standard mathematical fact that $e^x - 1 > x$ for all $x > 0$, so this refutes the conjecture.
 
-$h$ is not unique, and we can produce many more such functions in the following way. Note that $x = \int_0^x 1 \,\text dt$, and so the slope is $1$ by the fundamental theorem of calculus (a rather convoluted way to arrive at that fact). To get a function with a faster slope near $0$, we just need to integrate something that's bigger than $1$ near zero, as if $f > g$ on $(0,\e)$ then $\int_0^\e f > \int_0^\e g$ (this is the monotonicity of integration).
+$H$ is not unique, and we can produce many more such functions in the following way. Note that $x = \int_0^x 1 \,\text dt$, and so the slope is $1$ by the fundamental theorem of calculus (a rather convoluted way to arrive at that fact). To get a function with a faster slope near $0$, we just need to integrate something that's bigger than $1$ near zero, as if $f > g$ on $(0,\e)$ then $\int_0^\e f > \int_0^\e g$ (this is the monotonicity of integration).
 
 Well, one such function is the constant $2$. Does that work? $F(x) = \int_0^x 2 \,\text dt = 2x$ satisfies $(1)$ if we relax to accept $F^{\prime\prime}(x) = 0$. This gives us the rather-expected result that the line $y = 2x$ is always above the line $y = x$ for positive inputs. So that's nearly an example, but it'd be nice to get some with positive curvature.
 
