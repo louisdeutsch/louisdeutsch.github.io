@@ -72,7 +72,7 @@ $$
 N(X^T) = \left\{\begin{bmatrix}0\\s\\t\end{bmatrix} : s,t \in \R\right\}
 $$
 
-so vectors of the form $\begin{bmatrix}a\\s\\t\end{bmatrix}$ will project to $\hat y$, and these are all elements of the 2-dimensional affine subspace $\hat y + N(X^T)$. Next I need $\|\tilde y\|$ preserved which means my $z$ have norm $r$, so if I place a sphere of radius $r$ centered at $\hat y$ and look for the intersection with $\hat y + N(X^T)$ I will find all my valid perturbations. This is shown in the picture below.
+so vectors of the form $[a \mid s \mid t]^T$ will project to $\hat y$, and these are all elements of the 2-dimensional affine subspace $\hat y + N(X^T)$. Next I need $\|\tilde y\|$ preserved which means my $z$ have norm $r$, so if I place a sphere of radius $r$ centered at $\hat y$ and look for the intersection with $\hat y + N(X^T)$ I will find all my valid perturbations. This is shown in the picture below.
 
 ![In this picture y projects to y-hat and N(X^T) is the span of the 2nd and 3rd basis vectors. The orange circle is the set of vectors that all lead to the same beta-hat and sigma-hat-squared.](/assets/archive/changing-y-in-linear-regr/set-of-valid-perturbations-v2.png)
 
