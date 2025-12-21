@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Changing beta hat without changing y hat"
-date: 2020-01-01
+title: "Changing $y$ without changing $\\hat\\beta$ or $\\hat\\sigma^2$ in linear regression"
+date: 2022-01-01
 ---
 
 $\newcommand{\R}{\mathbb R}\newcommand{\e}{\varepsilon}\newcommand{\0}{\mathbf 0}\newcommand{\E}{\operatorname{E}}\newcommand{\Var}{\operatorname{Var}}$Consider a linear regression model $y = X\beta+\e$ with $X\in\R^{n\times p}$ known and full column rank. Under common assumptions like $\E[\e]=\0$ and $\Var[\e] = \sigma^2 I$, the Gauss-Markov theorem establishes that the best linear unbiased estimator (BLUE) of $\beta$ is $\hat\beta = (X^TX)^{-1}X^Ty$, and $\hat\sigma^2 = \frac{1}{n-p}\|y-\hat y\|^2$ is unbiased for $\sigma^2$. In this post I'm going to characterize the modifications of $y$ that leave $\hat\beta$ and $\hat\sigma^2$ unchanged. I'll let $X=UDV^T$ be the SVD of $X$ and I'll extend $U$ to an orthonormal basis $\bar U := (U\mid U_\perp)$ for all of $\R^n$ (given $U$, one simple way to do this with probability 1 is to take $n-p$ draws from $\mathcal N(0, I_n)$ and orthonormalize via Gram-Schmidt). I'll use $\hat\beta(y)$ and $\hat\sigma^2(y)$ when I want to indicate the response vector used in their computation. The hat matrix will be denoted by $H=X(X^TX)^{-1}X^T$ and I'll use the fact that $H = UU^T$.
