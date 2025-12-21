@@ -11,4 +11,4 @@ Before beginning this PhD in August 2022, I spent 6 years as a data scientist at
 
 I used to have a blog at jld-stats.com (now defunct). I am in the process of moving my old blog posts into the "archive" section of this website. 
 
-I also used to be very active on the statistics Q&A website Cross Validated. My profile can be found here: https://stats.stackexchange.com/users/30005/jld.
+I also used to be very active on the statistics Q&A website Cross Validated. My profile can be found [here](https://stats.stackexchange.com/users/30005/jld).
