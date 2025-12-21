@@ -9,3 +9,8 @@ plugins:
 
 markdown: kramdown
 
+collections:
+  archive:
+    output: true
+    permalink: /archive/:name/
+

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article>
+  <h1>{{ page.title }}</h1>
+  <p class="archive-note"><em>This post is from the archive of my old blog (jld-stats.com).</em></p>
+  {{ content }}
+</article>
+
+<!-- MathJax for LaTeX rendering -->
+<script>
+  MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
