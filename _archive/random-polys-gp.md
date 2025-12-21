@@ -80,18 +80,18 @@ I'll now conclude with a comment on a connection between the rank of the kernel 
 
 Let $\x := (x_1, \dots, x_n)^T$ with $x_1 < \dots < x_n$ and let $\y := (y_1, \dots, y_n)^T \in \mathbb R^n$. Suppose $f \sim \mathcal{GP}(0, k)$ for an arbitrary kernel $k$.
 
-I'll now assume that the kernel matrix associated with $k$ is full rank (so strictly PD rather than PSD). An example of such a kernel is the squared exponential kernel. I'll model $\y \sim \mathcal N(\0, K)$ and since $K$ is full rank this distribution is supported on all of $\mathbb R^n$ and any $\y$ is a possible output. Now for a new point $x_*\in\X$ with $f_* := f(x_*)$ I'll set $k_* = k(x_*, \x)$ and $k_{**} = k(x_*,x_*)$ so
+I'll now assume that the kernel matrix associated with $k$ is full rank (so strictly PD rather than PSD). An example of such a kernel is the squared exponential kernel. I'll model $\y \sim \mathcal N(\0, K)$ and since $K$ is full rank this distribution is supported on all of $\mathbb R^n$ and any $\y$ is a possible output. Now for a new point $x_\ast\in\X$ with $f_\ast := f(x_\ast)$ I'll set $k_\ast = k(x_\ast, \x)$ and $k_{\ast\ast} = k(x_\ast,x_\ast)$ so
 $$
-f_* \mid \y \sim \mathcal N(k_*^TK^{-1}\y, k_{**} - k_*^TK^{-1}k_*).
+f_\ast \mid \y \sim \mathcal N(k_\ast^TK^{-1}\y, k_{\ast\ast} - k_\ast^TK^{-1}k_\ast).
 $$
-This is the posterior GP. I now want to see what happens if $x_* = x_i$ for $i\in\{1,\dots,n\}$. I know $KK^{-1} = I$ and
+This is the posterior GP. I now want to see what happens if $x_\ast = x_i$ for $i\in\{1,\dots,n\}$. I know $KK^{-1} = I$ and
 $$
 K = \begin{bmatrix} k(x_1, \x) \\ \vdots \\ k(x_n, \x)\end{bmatrix}
 $$
 so this means $k(x_i, \x)^TK^{-1} = e_i$, the $i$th standard basis vector. I'll also have
 $$
 \begin{aligned}
-&k_{**} - k_*^TK^{-1}k_* = k(x_i,x_i) - k(x_i, \x)^TK^{-1}k(x_i, \x)\\& = k(x_i, x_i) - e_i^Tk(x_i, \x) \\&= 0
+&k_{\ast\ast} - k_\ast^TK^{-1}k_\ast = k(x_i,x_i) - k(x_i, \x)^TK^{-1}k(x_i, \x)\\& = k(x_i, x_i) - e_i^Tk(x_i, \x) \\&= 0
 \end{aligned}
 $$
 so all together $f(x_i) \mid \y \sim \mathcal N(y_i, 0) = y_i$ almost surely. This means that the posterior GP interpolates $\y$ over $\x$ with probability one.
