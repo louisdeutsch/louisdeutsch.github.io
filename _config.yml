@@ -3,6 +3,11 @@ description: stats and mathy things
 author: Louis Deutsch
 theme: minima
 
+header_pages:
+  - index.md
+  - blog.md
+  - archive.md
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
