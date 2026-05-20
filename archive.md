@@ -6,7 +6,7 @@ permalink: /archive/
 
 # Archive
 
-Posts from my old blog (jld-stats.com).
+I am in the process of moving the posts from my old blog (jld-stats.com) over here. 
 
 {% assign sorted_posts = site.archive | sort: "date" | reverse %}
 {% assign current_year = nil %}
