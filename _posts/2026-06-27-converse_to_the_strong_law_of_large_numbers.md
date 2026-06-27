@@ -4,15 +4,6 @@ title: "The converse of the strong law of large numbers"
 date: 2026-06-27
 ---
 
----
-title: "conv"
-output:
-  html_document: default
-  pdf_document: default
-date: "2026-06-27"
----
-
-
 $\newcommand{\E}{\operatorname{E}}\newcommand{\convp}{\stackrel{\text p}{\to}}$
 $\newcommand{\convas}{\stackrel{\text{as}}{\to}}\newcommand{\e}{\varepsilon}$
 
