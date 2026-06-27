@@ -4,6 +4,15 @@ title: "The converse of the strong law of large numbers"
 date: 2026-06-27
 ---
 
+---
+title: "conv"
+output:
+  html_document: default
+  pdf_document: default
+date: "2026-06-27"
+---
+
+
 $\newcommand{\E}{\operatorname{E}}\newcommand{\convp}{\stackrel{\text p}{\to}}$
 $\newcommand{\convas}{\stackrel{\text{as}}{\to}}\newcommand{\e}{\varepsilon}$
 
@@ -25,7 +34,7 @@ It turns out: yes!
 
 __Proof:__
 
-First, I'm going to step back and explain our plan of attack. We need to connect a sequence having an almost-sure limit, to a statement about the heaviness of the tails of the distribution of $X$. The key bridge here will be the second [Borel-Cantelli lemma](https://en.wikipedia.org/wiki/Borel%E2%80%93Cantelli_lemma) (BC2): it states that if we have an independent sequence of events $A_1, A_2, \dots$, with the property that $\sum_{n=1}^\infty P(A_n) = \infty$, then $P(\text{infinitely many }A_n\text{ occur}) = 1$. If our $A_n$ are something like $\{\lvert X_n \rvert > a_n\}$, for some $a_n \to \infty$, then $\sum_{n=1}^\infty P(A_n)$ tells us about the tails of $X$ (since that sum tells us how quickly the probability of large deviations goes to zero). And whether or not infinitely many of the $A_n$ occur tells us about whether or not the sequence $X_1,X_2,\dots$ has a limit after some normalization.
+First, I'm going to step back and explain our plan of attack. We need to connect a sequence having an almost-sure limit, to a statement about the heaviness of the tails of the distribution of $X$. The key bridge here will be the second [Borel-Cantelli lemma](https://en.wikipedia.org/wiki/Borel%E2%80%93Cantelli_lemma) (BC2): it states that if we have an independent sequence of events $A_1, A_2, \dots$, with the property that $\sum_{n=1}^\infty P(A_n) = \infty$, then $P(\text{infinitely many }A_n\text{ occur}) = 1$. If our $A_n$ are something like $\\{\lvert X_n \rvert > a_n\\}$, for some $a_n \to \infty$, then $\sum_{n=1}^\infty P(A_n)$ tells us about the tails of $X$ (since that sum tells us how quickly the probability of large deviations goes to zero). And whether or not infinitely many of the $A_n$ occur tells us about whether or not the sequence $X_1,X_2,\dots$ has a limit after some normalization.
 
 But right now, that is the opposite direction. We will therefore use the contrapositive of BC2, which is that
 
@@ -67,7 +76,7 @@ $$
 \exists N : n > N \implies \lvert X_n(\omega)/n\rvert < \e.
 $$
 
-In other words, $\lvert X_n \rvert  > n \e$ can only happen finitely many times, everywhere on a set with prob. 1. We now can use BC2: let $A_n = \{\lvert X_n \rvert  > n \e\}$. We just showed that
+In other words, $\lvert X_n \rvert  > n \e$ can only happen finitely many times, everywhere on a set with prob. 1. We now can use BC2: let $A_n = \\{\lvert X_n \rvert  > n \e\\}$. We just showed that
 
 $$
 P\left(\lvert X_n \rvert  > n \e \text{ infinitely often}\right) = P\left(A_n \text{ occur infinitely often}\right) = 0.
@@ -96,10 +105,9 @@ $$
 To see why this is true, I'll sketch it assuming a density:
 
 $$
-\E Y = \int_0^\infty y f(y)\,\text dy = \int_0^\infty \int_0^y f(y)\,\text dt\,\text dy = \int_0^\infty \int_t^\infty f(y)\,\text dy\,\text dt = \int_0^\infty P(Y>t)\,\text dt,
+\E Y = \int_0^\infty y f(y)\,\text dy = \int_0^\infty \int_0^y f(y)\,\text dt\,\text dy = \int_0^\infty \int_t^\infty f(y)\,\text dy\,\text dt = \int_0^\infty P(Y>t)\,\text dt.
 $$
-
-with the key step being the exchange of the order of integration. This is justified by [Tonelli's theorem](https://en.wikipedia.org/wiki/Fubini%27s_theorem#Tonelli's_theorem_for_non-negative_measurable_functions), with the added plus that it also still holds even if $\E Y = \infty$. I've seen this referred to by various names but I don't know a canonical one!
+The idea is that we can view this as being an integral over a 2D region (the infinite triangle formed by the line $y=t$ and the $y$-axis), and by switching the order of integration (justified by [Tonelli's theorem](https://en.wikipedia.org/wiki/Fubini%27s_theorem#Tonelli's_theorem_for_non-negative_measurable_functions)) we can measure it two different ways. It also still holds even if $\E Y = \infty$, with both sides being infinite. I've seen this referred to by various names but I don't know a canonical one.
 
 Back to the result: we have
 
@@ -111,7 +119,7 @@ Let $Y := \lvert X_1 /\e\rvert$ be our non-negative random variable. $P(Y>y)$ is
 
 Having $\E\lvert X_1\rvert < \infty$ means the strong law of large numbers applies to the $X_i$, so $\bar X_n \convas \E X_1$. But we already know this sequence has an almost sure limit of $0$, so $0 = \E X_1$.
 
-Finally, to recover the original result for $\mu \neq 0$, I'll use the notation $X_i' = X_i - \mu$, so we actually just showed $\E\lvert X_1 '\rvert  < \infty$ and $\E X_1' = 0$. For any random variable $Y$, $Y$ is integrable if and only if an arbitrary translation $Y-c$ is integrable via the triangle inequality:
+Finally, to recover the original result for $\mu \neq 0$, I'll use the notation $X_i' = X_i - \mu$, so we actually just showed $\E\lvert X_1' \rvert  < \infty$ and $\E X_1' = 0$. For any random variable $Y$, $Y$ is integrable if and only if an arbitrary translation $Y-c$ is integrable, via the triangle inequality:
 
 $$
 \begin{aligned}
@@ -151,5 +159,5 @@ $$
 P(\lvert X_n \rvert  > n^{1/p}\e \text{ infinitely often}) = 1.
 $$
 
-So, as an example of what this can tell us, suppose the $X_i$ have a finite mean, but an infinite variance (such RVs can be useful for modeling real-world heavy tailed phenomena, like in finance). This means that we will only have fluctuations of order $n$ finitely often, but we will have fluctuations of order $\sqrt n$ infinitely often. I think this is a really useful way to get an intuitive feel for what this modeling choice really means!
+So, as an example of what this can tell us, suppose the $X_i$ have a finite mean, but an infinite variance (such RVs can be used for modeling real-world heavy tailed phenomena). This means that we will only have fluctuations of order $n$ finitely often, but we will have fluctuations of order $\sqrt n$ infinitely often (a.s.). I like this as a way to get an intuitive feel for what this modeling choice really means!
 
