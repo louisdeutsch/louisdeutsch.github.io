@@ -18,7 +18,7 @@ In this post, I will explore the following question: __does the converse of the 
 More precisely:
 
 $$
-\text{If } \bar X_n \convas \mu \text{ for any } \mu \in \mathbb R, \text{ then must }\E \lvert X_1\rvert  < \infty \text{ and } \E X_1 = \mu?
+\text{If } \bar X_n \convas \mu \text{ for some } \mu \in \mathbb R, \text{ then must }\E \lvert X_1\rvert  < \infty \text{ and } \E X_1 = \mu?
 $$
 
 It turns out: yes!
@@ -109,7 +109,7 @@ $$
 
 Let $Y := \lvert X_1 /\e\rvert$ be our non-negative random variable. $P(Y>y)$ is non-increasing, so $\sum_{n=1}^\infty P(Y>n)$ is an upper bound to $\int_1^\infty P(Y>y)\,\text dy$. And $\int_0^1 P(Y>y)\,\text dy \leq 1$, so this is enough to guarantee $\E Y = \E\lvert X_1 /\e\rvert < \infty$, and therefore $\E\lvert X_1 \rvert  < \infty$.
 
-Having $\E\lvertX_1\rvert < \infty$ means the strong law of large numbers applies to the $X_i$, so $\bar X_n \convas \E X_1$. But we already know this sequence has an almost sure limit of $0$, so $0 = \E X_1$.
+Having $\E\lvert X_1\rvert < \infty$ means the strong law of large numbers applies to the $X_i$, so $\bar X_n \convas \E X_1$. But we already know this sequence has an almost sure limit of $0$, so $0 = \E X_1$.
 
 Finally, to recover the original result for $\mu \neq 0$, I'll use the notation $X_i' = X_i - \mu$, so we actually just showed $\E\lvert X_1 '\rvert  < \infty$ and $\E X_1' = 0$. For any random variable $Y$, $Y$ is integrable if and only if an arbitrary translation $Y-c$ is integrable via the triangle inequality:
 
