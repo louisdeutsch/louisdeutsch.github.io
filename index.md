@@ -22,10 +22,10 @@ I am also a core developer of [SCEPTRE](https://timothy-barry.github.io/sceptre-
 
 ---
 
-Before beginning this PhD in August 2022, I spent 6 years as a data scientist where I worked on projects including machine learning for targeted advertising; fraud detection; social network analysis; and survey design with inferential analyses. I obtained a BS in statistics (with honors) and mathematics, as well as an MS in statistics, all from the University of Wisconsin-Madison. 
+Before beginning this PhD in August 2022, I spent 6 years as a data scientist where I worked on projects including machine learning for targeted advertising; fraud detection; social network analysis; and survey design with inferential analyses. I obtained a BS in statistics and mathematics, as well as an MS in statistics, all from the University of Wisconsin-Madison. My undergrad thesis _Investigating the 2-stage ratio estimator: relative performance under model and design_ was advised by [Erik Nordheim](https://stat.wisc.edu/staff/nordheim-rick/). 
 
 I used to have a blog at jld-stats.com (now defunct). I am in the process of moving my old blog posts into the "archive" section of this website. 
 
-I also used to be very active on the statistics Q&A website Cross Validated. My profile can be found here: [![jld](https://stats.stackexchange.com/users/flair/30005.png?theme=clean)](https://stats.stackexchange.com/users/30005/jld)
+In my pre-PhD days, I also used to be very active on the statistics Q&A website Cross Validated. My profile can be found here: [![jld](https://stats.stackexchange.com/users/flair/30005.png?theme=clean)](https://stats.stackexchange.com/users/30005/jld)
 
 If you are interested in collaborating or discussing anything statistical, feel free to contact me at `louisdeutsch1023 at gmail dot com`. My full CV is available upon request.
