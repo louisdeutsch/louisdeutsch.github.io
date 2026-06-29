@@ -152,3 +152,4 @@ $$
 
 So, as an example of what this can tell us, suppose the $X_i$ have a finite mean, but an infinite variance (such RVs can be used for modeling real-world heavy tailed phenomena). This means that we will only have fluctuations of order $n$ finitely often, but we will have fluctuations of order $\sqrt n$ infinitely often (a.s.). I like this as a way to get an intuitive feel for what this modeling choice really means!
 
+I follow this up with a parallel discussion for the weak law of large numbers in my post [here](https://louisdeutsch.github.io/2026/06/28/converse_to_the_weak_law_of_large_numbers.html).
