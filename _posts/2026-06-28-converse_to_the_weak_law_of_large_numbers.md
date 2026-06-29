@@ -13,6 +13,7 @@ Suppose $X_1, X_2, \dots$ is an iid sequence of random variables. In my [previou
 $$
 \E \lvert X_1 \rvert < \infty \iff \bar X_n \text{ has an almost sure limit}.
 $$
+
 In this post, I will explore a natural companion question: __does the converse of the standard [weak law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers#Weak_law) (WLLN) hold?__ 
 
 More precisely:
@@ -98,7 +99,7 @@ Easy as that! We have therefore shown that $\frac 1n S_n' \convp 0$.
 _Step 2: the truncation error goes to $0$ in probability._
 
 
-Let $X_{nk}^c = X_k -  X_{nk} = X_k \1_{\vert X_k\vert > n}$, and define $S_n^c = \sum_{k=1}^n X_{nk}^c$ (I'm using a superscript $c$ to denote "complement"). We have $S_n = S_n' + S_n^c$, so if we can show that $S_n^c \convp 0$, then we are done by [Slutsky's theorem](https://en.wikipedia.org/wiki/Slutsky%27s_theorem).
+Let $$X_{nk}^c = X_k -  X_{nk} = X_k \mathbf 1_{\vert X_k\vert > n}$$, and define $$S_n^c = \sum_{k=1}^n X_{nk}^c$$ (I'm using a superscript $c$ to denote "complement"). We have $$S_n = S_n' + S_n^c$$, so if we can show that $$S_n^c \convp 0$$, then we are done by [Slutsky](https://en.wikipedia.org/wiki/Slutsky%27s_theorem).
 
 Goal: show that $P(\vert \frac 1n S_n^c \vert > \e) \to 0$.
 
