@@ -109,7 +109,7 @@ $$
 P(\vert  S_n^c \vert > \e) \leq P(\vert X_{1} \vert > n \cup \dots \cup \vert X_n \vert > n) \leq n P(\vert X_1 \vert > n)
 $$
 
-by the union bound and the $X_i$ being iid. $n$ is large, so 
+by the union bound and the $X_i$ being iid. We can assume $n \geq 2$, so 
 
 $$
 P(\vert X_1 \vert > n) = \frac 2c \int_{n}^\infty \frac{\text dx}{x^2 \log x}.
@@ -120,8 +120,8 @@ Integrating by parts,
 $$
 \int_{n}^\infty \frac{\text dx}{x^2 \log x} = -\frac{1}{x\log x} \bigg\vert_{n}^\infty - \int_n^\infty \frac{\text dx}{x^2 (\log x)^2} \leq \frac{1}{n\log n}.
 $$
-This means $n P(\vert X_1 \vert > n) \to 0$, and we are done!
 
+This means $n P(\vert X_1 \vert > n) \to 0$, and we are done!
 
 $\square$
 
