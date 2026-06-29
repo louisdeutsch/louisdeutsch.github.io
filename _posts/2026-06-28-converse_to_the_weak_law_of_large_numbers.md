@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The converse to the (standard) weak law of large numbers"
+title: "The converse of the (standard) weak law of large numbers"
 date: 2026-06-28
 ---
 
