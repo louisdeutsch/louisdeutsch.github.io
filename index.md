@@ -3,16 +3,15 @@ layout: home
 title: Home
 ---
 
-Hello! I am Louis Deutsch, and welcome to my personal website!
+Hello, I am Louis Deutsch, and welcome to my personal website.
 
 I am broadly interested in creating _useful_ solutions to real-world statistical challenges. My favorite problems are the messy ones where there is no hope of a tidy, simple answer. 
 
 ---
 
+In August 2026, I graduated with a PhD in statistics from Wharton, at the University of Pennsylvania, where I was advised by [Eugene Katsevich](https://ekatsevi.github.io/). 
 
-I will be graduating with a PhD in statistics from Wharton, at the University of Pennsylvania, in August of 2026 (I successfully defended in April 2026). My advisor is [Eugene Katsevich](https://ekatsevi.github.io/). 
-
-My PhD work focused on one particular messy real-world problem: the statistical and computational challenges in analyzing single-cell CRISPR experiments. CRISPR lets us precisely perturb a region of a cell's genome, so we can use this to understand what various regions of the genome do by comparing gene expressions between perturbed and unperturbed cells.
+My PhD work focused on one particular messy real-world problem: the statistical and computational challenges in analyzing single-cell CRISPR experiments. CRISPR lets us precisely perturb regions of a cell's genome, so we can learn the function of those regions by seeing how the perturbed cells' contents change.
 
 One problem I studied is the _variable perturbation effectiveness problem_: some genomic perturbations work better than others, so we can lose power by effectively mixing control group cells into our treatment group. This led to _Location tests with noisy proxies for latent variables_ by Louis Deutsch and Eugene Katsevich (2026), published [here](https://www.sciencedirect.com/science/article/pii/S0167715225002354).
 
@@ -22,10 +21,9 @@ I am also a core developer of [SCEPTRE](https://timothy-barry.github.io/sceptre-
 
 ---
 
-Before beginning this PhD in August 2022, I spent 6 years as a data scientist where I worked on projects including machine learning for targeted advertising; fraud detection; social network analysis; and survey design with inferential analyses. I obtained a BS in statistics and mathematics, as well as an MS in statistics, all from the University of Wisconsin-Madison. My undergrad thesis _Investigating the 2-stage ratio estimator: relative performance under model and design_ was advised by [Erik Nordheim](https://stat.wisc.edu/staff/nordheim-rick/). 
+Before beginning this PhD in August 2022, I spent 6 years as a data scientist where I worked on projects including machine learning for targeted advertising; fraud detection; social network analysis; and survey design with inferential analyses. I obtained a BS in statistics and mathematics, and a MS in statistics, all from the University of Wisconsin-Madison. My undergrad thesis _Investigating the 2-stage ratio estimator: relative performance under model and design_ was advised by [Erik Nordheim](https://stat.wisc.edu/staff/nordheim-rick/). 
 
-I used to have a blog at jld-stats.com (now defunct). I am in the process of moving my old blog posts into the "archive" section of this website. 
-
-In my pre-PhD days, I also used to be very active on the statistics Q&A website Cross Validated. My profile can be found here: [![jld](https://stats.stackexchange.com/users/flair/30005.png?theme=clean)](https://stats.stackexchange.com/users/30005/jld)
+In my pre-PhD days, I also used to be very active on the statistics Q&A website Cross Validated. My profile can be found here:
+[![jld](https://stats.stackexchange.com/users/flair/30005.png?theme=clean)](https://stats.stackexchange.com/users/30005/jld)
 
 If you are interested in collaborating or discussing anything statistical, feel free to contact me at `louisdeutsch1023 at gmail dot com`. My full CV is available upon request.
