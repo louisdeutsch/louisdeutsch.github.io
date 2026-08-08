@@ -1,21 +1,15 @@
 title: Louis Deutsch's website
-description: stats and mathy things
+description: statistics, math, and bioinformatics
 author: Louis Deutsch
 theme: minima
 
 header_pages:
   - index.md
   - blog.md
-  - archive.md
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
 markdown: kramdown
-
-collections:
-  archive:
-    output: true
-    permalink: /archive/:name/
 
