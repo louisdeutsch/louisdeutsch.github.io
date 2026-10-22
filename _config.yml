@@ -1,11 +1,9 @@
 title: Louis Deutsch's website
-description: statistics, math, and bioinformatics
 author: Louis Deutsch
 theme: minima
 
 header_pages:
   - index.md
-  - blog.md
 
 plugins:
   - jekyll-feed
